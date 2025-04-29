@@ -74,7 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 MEJORAS:
 
 
-el carousel debe de ir dando vueltas como un carrusel solito, y si uno quiere dar en las flechas o en los puntitos de abajo para ver una marca detenidamente.
+
 
 
 hacer el repositorio.

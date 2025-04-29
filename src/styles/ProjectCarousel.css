@@ -60,28 +60,19 @@
   transform: scale(1.1);
 }
 
-.carousel-track {
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  max-width: 1200px;
-  touch-action: pan-y;
-}
-
 .slides-container {
+  width: 100%;
   display: flex;
-  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  scroll-snap-type: x mandatory;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Reducir de 0.6s a 0.3s */
 }
 
 .carousel-item {
   flex: 0 0 100%;
-  scroll-snap-align: start;
   min-width: 100%;
-  padding: 0 15px;
   opacity: 0.3;
   transform: scale(0.9);
   transition: all 0.6s ease;
+  scroll-snap-align: start;
 }
 
 .carousel-item.active {
@@ -163,26 +154,25 @@
 }
 
 .pagination {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 2rem;
+  padding: 12px 0; /* Espacio vertical mejorado */
 }
 
 .pagination-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 2px solid rgba(176, 38, 255, 0.5);
+  width: 12px; /* Tamaño del círculo */
+  height: 12px; /* Mantener relación 1:1 */
+  border-radius: 50%; /* Convertir en círculo */
+  border: 2px solid rgba(176, 38, 255, 0.5); /* Borde más visible */
+  margin: 0 4px; /* Reducir espaciado */
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
 
 .pagination-dot.active {
-  background: #ffffff;
-  border-color: #ffffff;
-  transform: scale(1.2);
+  background: #ffffff; /* Fondo blanco para el activo */
+  border-color: #ffffff; /* Borde blanco */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Resaltado más intenso */
 }
 
 @media (min-width: 768px) {
