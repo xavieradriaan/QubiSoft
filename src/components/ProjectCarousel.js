@@ -50,6 +50,34 @@ const brands = [
     description: 'Servicios de infraestructura y redes para empresas emergentes',
     industry: 'Infraestructura IT',
     logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+  },
+  {
+    id: 8,
+    name: 'Café Flor de Caña',
+    description: 'Café premium ecuatoriano con reconocimiento internacional',
+    industry: 'Alimentos y bebidas',
+    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+  },
+  {
+    id: 9,
+    name: 'Construcciones Ecuador',
+    description: 'Líder en construcción de infraestructura pública y privada',
+    industry: 'Construcción',
+    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+  },
+  {
+    id: 10,
+    name: 'Ecuador Travel',
+    description: 'Agencia de turismo con enfoque en sostenibilidad',
+    industry: 'Turismo',
+    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+  },
+  {
+    id: 11,
+    name: 'Cerveza Pilsener',
+    description: 'Cerveza ecuatoriana con tradición y calidad',
+    industry: 'Bebidas',
+    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
   }
 ];
 
