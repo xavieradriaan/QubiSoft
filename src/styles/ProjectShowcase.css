@@ -1,0 +1,231 @@
+.project-showcase {
+  background: linear-gradient(45deg, #1e1e1e 0%, #4b0082 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.holographic-text {
+  background: linear-gradient(45deg, #fff 25%, #4b0082 50%, #fff 75%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: hologram 3s linear infinite;
+}
+
+@keyframes hologram {
+  to { background-position: 200% center; }
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.project-card {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(30, 30, 30, 0.95); /* 1e1e1e */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 40px rgba(176, 38, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-inner {
+  position: relative;
+  padding: 1.5rem;
+}
+
+.project-image {
+  height: 220px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  margin-bottom: 1.5rem;
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(26, 5, 46, 0) 50%, #1a052e 100%);
+}
+
+.project-glows {
+  position: absolute;
+  inset: 0;
+}
+
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.3;
+}
+
+.glow.purple {
+  width: 200px;
+  height: 200px;
+  background: #4b0082;
+  top: -50px;
+  left: -50px;
+}
+
+.glow.white {
+  width: 150px;
+  height: 150px;
+  background: #ffffff;
+  bottom: -50px;
+  right: -50px;
+}
+
+.project-content {
+  position: relative;
+  z-index: 2;
+}
+
+.project-title {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.title-decorator {
+  width: 8px;
+  height: 30px;
+  background: linear-gradient(180deg, #b026ff 0%, #6e0cc9 100%);
+  border-radius: 4px;
+}
+
+.project-description {
+  color: #d8c2ff;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  min-height: 80px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.tech-pill {
+  background: rgba(176, 38, 255, 0.15);
+  color: #e6d3ff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(176, 38, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.tech-glow {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: rgba(176, 38, 255, 0.2);
+  filter: blur(20px);
+  top: -10px;
+  left: -10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tech-pill:hover {
+  background: rgba(176, 38, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.tech-pill:hover .tech-glow {
+  opacity: 1;
+}
+
+.case-study-button {
+  background: linear-gradient(45deg, #4b0082, rgba(255, 255, 255, 0.8));
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.button-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.2) 50%, 
+    transparent 100%
+  );
+  opacity: 0;
+  animation: glow-slide 3s infinite;
+}
+
+@keyframes glow-slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.case-study-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(176, 38, 255, 0.3);
+}
+
+.case-study-button:hover .button-glow {
+  opacity: 1;
+}
+
+.button-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.case-study-button:hover .button-arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .holographic-text {
+    font-size: 2.5rem;
+  }
+  
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-image {
+    height: 180px;
+  }
+}

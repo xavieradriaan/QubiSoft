@@ -1,0 +1,15 @@
+:root {
+  --primary: #4b0082;
+  --secondary: #ffffff;
+  --dark-bg: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.8);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Implementar en otros archivos usando las variables */
+.service-card {
+  background: var(--dark-bg);
+  color: var(--text-primary);
+  transition: var(--transition);
+}

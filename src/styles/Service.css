@@ -1,0 +1,21 @@
+.service-card {
+  background: rgba(30, 30, 30, 0.95); /* 1e1e1e */
+  border-color: #4b0082;
+  color: #ffffff;
+}
+
+.service-icon {
+  color: #ffffff;
+}
+
+.service-card h3 {
+  color: #ffffff;
+}
+
+.quantum-line {
+  background: linear-gradient(90deg, #4b0082, rgba(255, 255, 255, 0.6));
+}
+
+.service-card:hover {
+  box-shadow: 0 0 40px rgba(75, 0, 130, 0.6);
+}

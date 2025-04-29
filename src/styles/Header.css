@@ -1,0 +1,133 @@
+.header {
+  background: rgba(75, 0, 130, 0.95); /* 4b0082 con transparencia */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-image {
+  width: 50px; /* Ajusta según el tamaño de tu logo */
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* Eliminar o comentar el viejo hologram-effect */
+/*
+.hologram-effect {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #b026ff, #00f7ff);
+  border-radius: 50%;
+  animation: hologram-pulse 2s infinite alternate;
+}
+*/
+
+/* Opcional: Si quieres mantener una animación sutil */
+@keyframes logo-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.logo-image {
+  animation: logo-float 6s ease-in-out infinite;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #4b0082, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffffff; /* Línea inferior blanca */
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  background: #ffffff;
+}
+
+.cta-button {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #ffffff;
+  color: #4b0082;
+}
+
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 24px;
+  background: white;
+  margin: 4px 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger .top.open { transform: translateY(7px) rotate(45deg); }
+.hamburger .middle.open { opacity: 0; }
+.hamburger .bottom.open { transform: translateY(-7px) rotate(-45deg); }
+
+/* Menú móvil */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+}
