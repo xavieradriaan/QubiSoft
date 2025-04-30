@@ -77,4 +77,8 @@ MEJORAS:
 
 
 
-hacer el repositorio.
+hacer el repositorio:
+
+npm run build
+
+hacer npm run deploy
