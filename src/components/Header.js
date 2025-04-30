@@ -11,7 +11,7 @@ const Header = () => {
         {/* Reemplazar el hologram-effect por el logo */}
         <img 
           src="/Q2.png" 
-          alt="Qubit Soft Logo" 
+          alt="Qubi Soft Logo" 
           className="logo-image"
         />
         <h1 className="gradient-text">QubitSoft</h1>

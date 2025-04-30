@@ -1,6 +1,7 @@
 .header {
-  background: rgba(75, 0, 130, 0.95); /* 4b0082 con transparencia */
-  padding: 1rem 2rem;
+  background: var(--dark-purple); /* #3B2A5B */
+  border-bottom: none; /* Quitamos el border-bottom */
+  padding: 0.3rem 2rem; /* Reducimos más el padding vertical */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,20 +10,22 @@
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo-container {
   display: flex;
-  align-items: center;
+  align-items: center; /* Volvemos a alinear al centro */
   gap: 1rem;
+  padding-top: 6px; /* Aumentamos padding superior */
 }
 
 .logo-image {
-  width: 50px; /* Ajusta según el tamaño de tu logo */
-  height: 50px;
+  width: 48px; /* Reducimos ligeramente */
+  height: 48px;
   object-fit: contain;
   transition: transform 0.3s ease;
+  animation: logo-float 6s ease-in-out infinite;
+  margin-top: 2px; /* Alineación vertical fina */
 }
 
 .logo-image:hover {
@@ -46,16 +49,18 @@
   50% { transform: translateY(-5px); }
 }
 
-.logo-image {
-  animation: logo-float 6s ease-in-out infinite;
-}
-
 .gradient-text {
-  background: linear-gradient(45deg, #4b0082, #ffffff);
+  background: linear-gradient(45deg, var(--dark-purple), var(--white));
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 700;
+  position: relative;
+  top: 4px; /* Bajamos 1px más */
+  margin-left: 0.5rem;
+  line-height: 0.9; /* Ajuste de interlineado */
+  letter-spacing: -0.5px;
 }
 
 .nav-links {
@@ -65,10 +70,11 @@
 }
 
 .nav-links a {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
   position: relative;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  margin: 0 1rem;
   transition: all 0.3s ease;
 }
 
@@ -79,30 +85,37 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #ffffff; /* Línea inferior blanca */
+  background: var(--white); /* Línea inferior blanca */
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover::after {
   width: 100%;
-  background: #ffffff;
+  background: var(--dark-purple);
+}
+
+.nav-links a:hover {
+  color: var(--white);
 }
 
 .cta-button {
-  background: transparent;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  padding: 0.8rem 1.5rem;
+  border-color: var(--white);
+  color: var(--white);
+  padding: 0.6rem 1.8rem;
+  margin-left: 1rem;
   border-radius: 30px;
   transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-  background: #ffffff;
-  color: #4b0082;
+  background: var(--dark-purple);
+  border-color: var(--dark-purple);
+  color: var(--white);
 }
 
 .hamburger {
+  position: relative;
+  top: -2px;
   display: none;
   background: transparent;
   border: none;

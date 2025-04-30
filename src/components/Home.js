@@ -253,7 +253,7 @@ const Home = () => (
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          Innovación en cada línea de código...
+          Soluciones tecnológicas que impulsan tu empresa...
         </motion.p>
       </div>
       <div className="scanline"></div>

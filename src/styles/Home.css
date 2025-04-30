@@ -1,5 +1,5 @@
 .home {
-  background: #0a0118;
+  background: linear-gradient(45deg, var(--dark-purple), #1a0f24);
   color: #e6d3ff;
   min-height: 100vh;
   position: relative;
@@ -44,7 +44,7 @@
   text-align: center;
   margin-bottom: 2rem;
   position: relative;
-  text-shadow: 0 0 30px #b026ff;
+  text-shadow: 0 0 30px var(--purple);
   animation: hologram-float 6s ease-in-out infinite;
 }
 
@@ -62,7 +62,7 @@
   content: '';
   position: absolute;
   inset: -10px;
-  background: linear-gradient(45deg, #b026ff, #00f7ff);
+  background: linear-gradient(45deg, var(--purple), var(--salmon));
   z-index: -1;
   filter: blur(40px);
   opacity: 0.3;
@@ -96,7 +96,7 @@
 .services {
   position: relative;
   padding: 6rem 2rem;
-  background: rgba(26, 5, 46, 0.8);
+  background: rgba(59, 42, 91, 0.95);
   backdrop-filter: blur(20px);
   margin-top: 4rem;
 }

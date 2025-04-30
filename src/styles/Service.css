@@ -1,6 +1,6 @@
 .service-card {
-  background: rgba(30, 30, 30, 0.95); /* 1e1e1e */
-  border-color: #4b0082;
+  background: rgba(94, 75, 140, 0.1);
+  border: 1px solid var(--purple);
   color: #ffffff;
 }
 
@@ -13,9 +13,9 @@
 }
 
 .quantum-line {
-  background: linear-gradient(90deg, #4b0082, rgba(255, 255, 255, 0.6));
+  background: linear-gradient(90deg, var(--purple), var(--salmon));
 }
 
 .service-card:hover {
-  box-shadow: 0 0 40px rgba(75, 0, 130, 0.6);
+  box-shadow: 0 0 30px rgba(94, 75, 140, 0.4);
 }

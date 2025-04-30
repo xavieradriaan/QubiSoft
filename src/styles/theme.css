@@ -1,15 +1,111 @@
 :root {
-  --primary: #4b0082;
-  --secondary: #ffffff;
-  --dark-bg: #1e1e1e;
-  --text-primary: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.8);
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Paleta de colores principal */
+  --white: #FFFFFF;
+  --light: #F5F5F5;
+  --primary-purple: #5E4B8C;
+  --dark-purple: #3B2A5B;
+  --accent-salmon: #FF6F61;
+  
+  /* Colores funcionales */
+  --background: var(--dark-purple);
+  --text-primary: var(--light);
+  --text-secondary: rgba(245, 245, 245, 0.9);
+  --border-color: rgba(94, 75, 140, 0.3);
+  
+  /* Tipografía */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-code: 'Fira Code', monospace;
+  --base-font-size: 16px;
+  --font-scale: 1.333;
+  
+  /* Tamaños de texto calculados */
+  --text-xs: calc(var(--base-font-size) / var(--font-scale));
+  --text-sm: calc(var(--base-font-size) * 0.875);
+  --text-base: var(--base-font-size);
+  --text-md: calc(var(--base-font-size) * var(--font-scale));
+  --text-lg: calc(var(--text-md) * var(--font-scale));
+  --text-xl: calc(var(--text-lg) * var(--font-scale));
+  
+  /* Espacios y tamaños */
+  --space-unit: 1rem;
+  --space-xs: calc(var(--space-unit) * 0.5);
+  --space-sm: calc(var(--space-unit) * 0.75);
+  --space-md: var(--space-unit);
+  --space-lg: calc(var(--space-unit) * 1.5);
+  --space-xl: calc(var(--space-unit) * 2);
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --shadow-accent: 0 4px 15px rgba(255, 111, 97, 0.3);
+  
+  /* Bordes */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 999px;
+  
+  /* Transiciones */
+  --transition-base: all 0.2s ease-in-out;
+  --transition-slow: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-transform: transform 0.2s ease;
+}
+
+/* Reset básico y estilos globales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  line-height: 1.6;
+}
+
+/* Tipografía responsive */
+h1 { 
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  color: var(--accent-salmon);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.2rem);
+  color: var(--primary-purple);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+}
+
+/* Clases de utilidad */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
 }
 
 /* Implementar en otros archivos usando las variables */
 .service-card {
-  background: var(--dark-bg);
+  background: var(--background);
   color: var(--text-primary);
-  transition: var(--transition);
+  transition: var(--transition-base);
 }

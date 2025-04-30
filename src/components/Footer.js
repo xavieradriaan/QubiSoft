@@ -38,11 +38,11 @@ const Footer = () => {
         <div className="footer-section">
           <h4 className="section-title">Contacto</h4>
           <div className="contact-container">
-            <a href="mailto:contact@qubisoft.io" className="email-link">
+            <a href="mailto:contact@Qubitsoft.io" className="email-link">
               <svg className="icon" viewBox="0 0 24 24">
                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
               </svg>
-              info@qubisoft.net
+              info@Qubitsoft.net
             </a>
             
             <div className="social-links">
@@ -80,7 +80,7 @@ const Footer = () => {
               aria-label="Suscribirse al newsletter"
               disabled={!email || status === 'loading'}
             >
-              {status === 'loading' ? 'Enviando...' : '¡Al Hiperespacio!'}
+              {status === 'loading' ? 'Enviando...' : 'Enviar Correo'}
             </button>
           </form>
           {status === 'success' && <p>¡Gracias por suscribirte!</p>}
@@ -91,7 +91,7 @@ const Footer = () => {
       <div className="quantum-divider"></div>
       
       <p className="copyright">
-        © 2025 QubiSoft - Haciendo posible tu futuro digital
+        © 2025 Qubitsoft - Haciendo posible tu futuro digital
       </p>
     </footer>
   );

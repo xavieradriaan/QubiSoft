@@ -129,7 +129,7 @@ const ProjectCarousel = () => {
     >
       <div className="carousel-header">
         <h2 className="carousel-title">
-          <span className="title-gradient">Impulsando a más de 200 empresas líderes</span>
+          <span className="title-gradient">Impulsando + 50 empresas líderes</span>
         </h2>
         <div className="carousel-controls">
           <button 
