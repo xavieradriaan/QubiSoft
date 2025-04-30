@@ -9,19 +9,25 @@ import './App.css';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
+  const handleFinishLoading = () => {
+    setIsLoading(false);
+  };
+
   return (
-    <div className="App">
+    <>
       {isLoading ? (
-        <Loading onFinish={() => setIsLoading(false)} />
+        <Loading onFinish={handleFinishLoading} />
       ) : (
-        <>
+        <div className="App">
+          <h1>Bienvenido a QubiSoft</h1>
+          <p>Tu app está lista 🚀</p>
           <Header />
           <Home />
           <ProjectCarousel />
           <Footer />
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 }
 
