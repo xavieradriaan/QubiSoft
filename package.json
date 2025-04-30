@@ -2,6 +2,7 @@
   "name": "my-company-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://xavieradriaan.github.io/QubiSoft/",
   "dependencies": {
     "@react-spring/web": "^9.7.5",
     "framer-motion": "^12.9.2",
@@ -20,8 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "homepage": "https://xavieradriaan.github.io/QubiSoft/"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
