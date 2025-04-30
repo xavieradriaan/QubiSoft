@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/QubiSoft/static/css/main.74e6e038.css",
-    "main.js": "/QubiSoft/static/js/main.ff371de3.js",
+    "main.js": "/QubiSoft/static/js/main.60982e07.js",
     "index.html": "/QubiSoft/index.html",
     "main.74e6e038.css.map": "/QubiSoft/static/css/main.74e6e038.css.map",
-    "main.ff371de3.js.map": "/QubiSoft/static/js/main.ff371de3.js.map"
+    "main.60982e07.js.map": "/QubiSoft/static/js/main.60982e07.js.map"
   },
   "entrypoints": [
     "static/css/main.74e6e038.css",
-    "static/js/main.ff371de3.js"
+    "static/js/main.60982e07.js"
   ]
 }
