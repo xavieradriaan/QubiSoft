@@ -253,18 +253,8 @@ const Home = () => (
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          {/* Versión mejorada */}
-          <span className="cyber-glitch" data-text="De lo complejo a lo disruptivo:">
-            De lo complejo a lo disruptivo:
-          </span>
-          <br />
-          <span className="neon-subtext">
-            Sistemas inteligentes para {" "}
-            <span className="rotating-words">
-              <span>retail</span>
-              <span>salud</span>
-              <span>industria 4.0</span>
-            </span>
+          <span className="slogan-glitch" data-text="Soluciones tecnológicas que impulsan tu empresa...">
+            Soluciones tecnológicas que impulsan tu empresa...
           </span>
         </motion.p>
       </div>
