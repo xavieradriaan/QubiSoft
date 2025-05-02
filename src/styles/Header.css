@@ -57,10 +57,10 @@
   font-size: 1.8rem;
   font-weight: 700;
   position: relative;
-  top: 4px; /* Bajamos 1px más */
+  top: 6px; /* Aumentado de 4px a 6px */
   margin-left: 0.5rem;
-  line-height: 0.9; /* Ajuste de interlineado */
-  letter-spacing: -0.5px;
+  line-height: 0.85; /* Reducido ligeramente */
+  transform: translateY(2px); /* Ajuste fino adicional */
 }
 
 .nav-links {
