@@ -253,7 +253,19 @@ const Home = () => (
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          Soluciones tecnológicas que impulsan tu empresa...
+          {/* Versión mejorada */}
+          <span className="cyber-glitch" data-text="De lo complejo a lo disruptivo:">
+            De lo complejo a lo disruptivo:
+          </span>
+          <br />
+          <span className="neon-subtext">
+            Sistemas inteligentes para {" "}
+            <span className="rotating-words">
+              <span>retail</span>
+              <span>salud</span>
+              <span>industria 4.0</span>
+            </span>
+          </span>
         </motion.p>
       </div>
       <div className="scanline"></div>
