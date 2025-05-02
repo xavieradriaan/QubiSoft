@@ -5,8 +5,8 @@ const Loading = ({ onFinish }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       onFinish();
-    }, 5000); // 5 segundos de espera para simular carga
-    return () => clearTimeout(timer); // Limpieza del temporizador
+    }, 5000);
+    return () => clearTimeout(timer);
   }, [onFinish]);
 
   return (
