@@ -10,7 +10,7 @@ const Header = () => {
       <div className="logo-container">
         {/* Reemplazar el hologram-effect por el logo */}
         <img 
-          src="/Q2.png" 
+          src={process.env.PUBLIC_URL + '/Q2.png'} 
           alt="Qubi Soft Logo" 
           className="logo-image"
         />

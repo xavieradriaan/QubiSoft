@@ -13,7 +13,7 @@ const Loading = ({ onFinish }) => {
     <div className="loading-container">
       <div className="loading-content">
         <img 
-          src="/logo00.png" 
+          src={process.env.PUBLIC_URL + '/logo00.png'} 
           alt="Cargando..." 
           className="loading-logo"
         />
