@@ -63,7 +63,7 @@
 .slides-container {
   width: 100%;
   display: flex;
-  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Reducir de 0.6s a 0.3s */
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .carousel-item {
@@ -71,13 +71,14 @@
   min-width: 100%;
   opacity: 0.3;
   transform: scale(0.9);
-  transition: all 0.6s ease;
+  transition: all 0.6s ease, opacity 0.6s ease;
   scroll-snap-align: start;
 }
 
 .carousel-item.active {
   opacity: 1;
   transform: scale(1);
+  z-index: 1;
 }
 
 .brand-card {
@@ -154,25 +155,25 @@
 }
 
 .pagination {
-  padding: 12px 0; /* Espacio vertical mejorado */
+  padding: 12px 0;
 }
 
 .pagination-dot {
-  width: 12px; /* Tamaño del círculo */
-  height: 12px; /* Mantener relación 1:1 */
-  border-radius: 50%; /* Convertir en círculo */
-  border: 2px solid rgba(176, 38, 255, 0.5); /* Borde más visible */
-  margin: 0 4px; /* Reducir espaciado */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(176, 38, 255, 0.5);
+  margin: 0 4px;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .pagination-dot.active {
-  background: #ffffff; /* Fondo blanco para el activo */
-  border-color: #ffffff; /* Borde blanco */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Resaltado más intenso */
+  background: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 @media (min-width: 768px) {

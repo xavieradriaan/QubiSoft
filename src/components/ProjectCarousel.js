@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import '../styles/ProjectCarousel.css';
 
 const brands = [
@@ -86,6 +86,8 @@ const ProjectCarousel = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const carouselRef = useRef();
 
   // Usar useCallback para memoizar las funciones
   const handlePrev = useCallback(() => {
@@ -96,16 +98,34 @@ const ProjectCarousel = () => {
     setCurrentIndex(prev => (prev === brands.length - 1 ? 0 : prev + 1));
   }, []);
 
-  // Efecto para el auto-rotación corregido
+  // Agrega Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.5 }
+    );
+    
+    if (carouselRef.current) {
+      observer.observe(carouselRef.current);
+    }
+    
+    return () => {
+      if (carouselRef.current) observer.unobserve(carouselRef.current);
+    };
+  }, []);
+
+  // Modifica el efecto de auto-rotación
   useEffect(() => {
     let interval;
-    if (!isHovered) {
-      interval = setInterval(handleNext, 1000); // Reducir de 5000ms a 3000ms
+    if (isVisible && !isHovered) {
+      interval = setInterval(handleNext, 3000);
     }
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, [isHovered, handleNext]);
+  }, [isVisible, isHovered, handleNext]);
 
   // Manejo táctil mejorado
   const handleTouchStart = (e) => {
@@ -124,6 +144,7 @@ const ProjectCarousel = () => {
     <section 
       className="project-carousel" 
       aria-label="Marcas destacadas"
+      ref={carouselRef}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
