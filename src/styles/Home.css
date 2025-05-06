@@ -88,8 +88,10 @@
   font-size: clamp(1.2rem, 3vw, 1.8rem);
   text-align: center;
   position: relative;
-  width: max-content;
+  width: 100%; /* Cambiado de max-content a 100% */
+  max-width: 800px; /* Límite máximo de ancho */
   margin: 0 auto;
+  padding: 0 1rem; /* Padding lateral para móviles */
   z-index: 3;
 }
 
@@ -107,7 +109,9 @@
 
 .slogan-glitch {
   position: relative;
-  display: inline-block;
+  display: block; /* Cambiado de inline-block a block */
+  width: fit-content;
+  margin: 0 auto;
   animation: text-flicker 3s linear infinite;
 }
 
@@ -236,7 +240,8 @@
   
   .typewriter {
     font-size: 1.2rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem; /* Menos padding en móviles */
+    line-height: 1.4; /* Mejor interlineado */
   }
   
   .services {
@@ -255,6 +260,12 @@
   
   .scanline {
     animation-duration: 6s; /* Más lento en móviles */
+  }
+  
+  .slogan-glitch {
+    white-space: normal; /* Permitir salto de línea */
+    text-align: center;
+    display: inline-block; /* Ajuste para animación */
   }
 }
 
