@@ -50,7 +50,7 @@
 .contact-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinear a la izquierda */
+  align-items: center; /* Cambiado de flex-start a center */
   gap: 1.5rem;
 }
 
@@ -66,7 +66,7 @@
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.05);
   width: fit-content;
-  margin-left: 0; /* Resetear cualquier margen anterior */
+  margin: 0 auto; /* Centrar horizontalmente */
 }
 
 .email-link:hover {
@@ -84,9 +84,8 @@
   display: flex;
   gap: 1.5rem;
   margin-top: 1rem;
-  justify-content: flex-start; /* Alinear íconos a la izquierda */
+  justify-content: center; /* Cambiado de flex-start a center */
   width: 100%;
-  margin-left: -8px; /* Compensar padding de los links */
 }
 
 .social-link {
@@ -97,6 +96,7 @@
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.05);
+  margin: 0 4px; /* Espaciado uniforme */
 }
 
 .social-link:hover {
@@ -196,4 +196,9 @@
   text-align: center;
   font-size: 0.9rem;
   opacity: 0.8;
+}
+
+/* Añadir para mejor alineación del título */
+.footer-section {
+  text-align: center;
 }
