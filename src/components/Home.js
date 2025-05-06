@@ -174,7 +174,7 @@ const projects = [
     title: "Aplicación de Agricultura Inteligente",
     description: "Sistema de agricultura inteligente con drones autónomos y visión por computadora",
     tech: "Drones autónomos, Sensores IoT, Análisis de datos en tiempo real, Optimización de cultivos",
-    image: "farm-drone.jpg",
+    image: process.env.PUBLIC_URL + "/agricola.png",  // Ruta actualizada
     pattern: "circuit-pattern.svg"
   },
   {
@@ -182,7 +182,7 @@ const projects = [
     title: "Sistema de Monitoreo de Salud",
     description: "Plataforma de monitoreo médico en tiempo real con análisis predictivo",
     tech: "Monitoreo remoto, Alertas en tiempo real, Análisis predictivo, Integración con dispositivos médicos",
-    image: "health-monitor.jpg",
+    image: process.env.PUBLIC_URL + "/sistemaMed.png",  // Ruta actualizada
     pattern: "neural-pattern.svg"
   }
 ];
