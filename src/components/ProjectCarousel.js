@@ -78,6 +78,13 @@ const brands = [
     description: 'Fabrica de pinturas y recubrimientos con enfoque en sostenibilidad',
     industry: 'Pinturas y recubrimientos',
     logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+  },
+  {
+    id: 12,
+    name: 'CONTINENTAL TIRE ANDINA S. A.',
+    description: 'Fabricante de neumáticos y productos de caucho', 
+    industry: 'Neumáticos y caucho',
+    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
   }
 ];
 
