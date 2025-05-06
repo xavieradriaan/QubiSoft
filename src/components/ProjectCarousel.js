@@ -106,13 +106,15 @@ const ProjectCarousel = () => {
       },
       { threshold: 0.5 }
     );
-    
-    if (carouselRef.current) {
-      observer.observe(carouselRef.current);
+
+    const currentRef = carouselRef.current; // Copiar el valor actual del ref
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
-    
+
     return () => {
-      if (carouselRef.current) observer.unobserve(carouselRef.current);
+      if (currentRef) observer.unobserve(currentRef); // Usar la copia del ref
     };
   }, []);
 

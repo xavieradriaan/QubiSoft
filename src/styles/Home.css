@@ -5,21 +5,24 @@
   position: relative;
 }
 
+/* Ajustar altura del hero */
 .hero {
   position: relative;
-  padding: 8rem 2rem;
+  padding: 4rem 2rem; /* Reducir padding vertical */
+  min-height: 60vh; /* En lugar de 80vh */
   overflow: hidden;
   isolation: isolate;
 }
 
+/* Reducir efectos de grid */
 .cyber-grid {
   position: absolute;
   inset: 0;
   background-image: 
     linear-gradient(rgba(176, 38, 255, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(176, 38, 255, 0.1) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: grid-scroll 100s linear infinite;
+  background-size: 30px 30px; /* Patrón más denso */
+  animation: grid-scroll 120s linear infinite; /* Movimiento más lento */
 }
 
 @keyframes grid-scroll {
@@ -44,10 +47,11 @@
   perspective: 1000px;
 }
 
+/* Reducir tamaño de textos */
 .neon-text {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 6vw, 4rem); /* Texto responsive */
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: relative;
   text-shadow: 0 0 30px var(--purple);
   animation: hologram-float 6s ease-in-out infinite;
@@ -69,17 +73,19 @@
   inset: -10px;
   background: linear-gradient(45deg, var(--purple), var(--salmon));
   z-index: -1;
-  filter: blur(40px);
-  opacity: 0.3;
+  filter: blur(30px); /* Reducir desenfoque */
+  opacity: 0.2; /* Más transparente */
 }
 
+/* Optimizar animaciones */
 @keyframes hologram-float {
-  0%, 100% { transform: translateY(0) rotateX(0deg); }
-  50% { transform: translateY(-20px) rotateX(5deg); }
+  0%, 100% { transform: translateY(0) rotateX(0deg) scale(0.95); }
+  50% { transform: translateY(-10px) rotateX(3deg) scale(1); }
 }
 
+/* Reducir tamaño de textos */
 .typewriter {
-  font-size: 1.8rem;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
   text-align: center;
   position: relative;
   width: max-content;
@@ -127,14 +133,15 @@
   animation: glitch-2 2s infinite linear alternate-reverse;
 }
 
+/* Ajustar efecto glitch */
 @keyframes glitch-1 {
-  0% { clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%); }
-  100% { clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%); }
+  0% { clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%); }
+  100% { clip-path: polygon(0 70%, 100% 70%, 100% 75%, 0 75%); }
 }
 
 @keyframes glitch-2 {
-  0% { clip-path: polygon(0 40%, 100% 40%, 100% 50%, 0 50%); }
-  100% { clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%); }
+  0% { clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%); }
+  100% { clip-path: polygon(0 70%, 100% 70%, 100% 75%, 0 75%); }
 }
 
 @keyframes text-flicker {
@@ -149,12 +156,13 @@
   }
 }
 
+/* Ajustar sección de servicios */
 .services {
   position: relative;
-  padding: 6rem 2rem;
+  padding: 4rem 1rem;
   background: rgba(59, 42, 91, 0.95);
   backdrop-filter: blur(20px);
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .cyber-border {
@@ -189,14 +197,15 @@
   display: inline-block;
 }
 
+/* Reducir altura del borde decorativo */
 .title-deco::after {
   content: '';
   position: absolute;
-  bottom: -15px;
+  bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
   width: 60%;
-  height: 3px;
+  height: 2px;
   background: linear-gradient(90deg, 
     transparent, 
     #b026ff, 
@@ -204,15 +213,23 @@
     transparent);
 }
 
+/* Ajustar grid de servicios */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas más estrechas */
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem; /* Prevenir overflow en móviles */
 }
 
 @media (max-width: 768px) {
+  /* Optimizar para móviles */
+  .hero {
+    padding: 2rem 1rem;
+    min-height: 50vh;
+  }
+  
   .neon-text {
     font-size: 2.5rem;
   }
@@ -224,6 +241,20 @@
   
   .services {
     padding: 4rem 1rem;
+  }
+  
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .scanline {
+    animation-duration: 6s; /* Más lento en móviles */
   }
 }
 
