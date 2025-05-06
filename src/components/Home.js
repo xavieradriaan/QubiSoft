@@ -8,192 +8,164 @@ const services = [
   { 
     id: 1, 
     name: 'Aplicación Web - Supermercado', 
-    description: 'Aplicaciones con React + WebAssembly para rendimiento de nivel militar',
+    description: 'Se desarrolló sistema web con carrito de compras, login, calidad de productos y control de stock.',
     icon: '🌌',
     gradient: 'linear-gradient(45deg, #6a00ff, #00f7ff)'
   },
   { 
     id: 2, 
     name: 'Bodega IoT', 
-    description: 'Redes de sensores con procesamiento Edge AI integrado',
+    description: 'Se integraron sensores RFID y AI para identificar, contar y rastrear herramientas en bodega industrial.',
     icon: '⚡',
     gradient: 'linear-gradient(45deg, #ff00ff, #00ff9d)'
   },
   {
     id: 3, 
-    name: 'Sistema de Monitoreo', 
-    description: 'Monitoreo en tiempo real con análisis predictivo y machine learning',
+    name: 'Sistema de Monitoreo Cámaras de Seguridad', 
+    description: 'Desarrollado sistema con cámaras IP que detectan movimiento y alertan anomalías usando ML.',
     icon: '🛰️',
     gradient: 'linear-gradient(45deg, #ff7e00, #ff00a8)'
   },
   {
-    id: 5, 
+    id: 4, 
     name: 'Integración de Sistemas para Sector Salud', 
-    description: 'Integración de sistemas con APIs y microservicios',
+    description: 'Unificamos app de pacientes con registros de síntomas, calendario de medicamentos y reportes PDF.',
     icon: '🔗',
     gradient: 'linear-gradient(45deg, #ff007f, #7f00ff)'
   },
   { 
-    id: 6, 
-    name: 'Consultorio Odontológico', 
-    description: 'Asesoría en tecnologías emergentes y tendencias del mercado',
+    id: 5, 
+    name: 'Sistema para Consultorio Odontológico', 
+    description: 'Web app para odontólogos con historial clínico, citas programadas y alertas automáticas a pacientes.',
     icon: '🧠',
     gradient: 'linear-gradient(45deg, #ff00ff, #7fff00)'
   },
   { 
-    id: 7, 
-    name: 'Desarrollo de Aplicaciones Móviles', 
-    description: 'Aplicaciones móviles nativas y multiplataforma',
-    icon: '📱',
-    gradient: 'linear-gradient(45deg, #00ffff, #ff00ff)'
-  },
-  { 
-    id: 9, 
-    name: 'Desarrollo de APIs', 
-    description: 'APIs RESTful y GraphQL para integración de sistemas',
-    icon: '🔌',
-    gradient: 'linear-gradient(45deg, #ff7f00, #007fff)'
-  },
-  { 
-    id: 10, 
+    id: 6, 
     name: 'Big Data y Análisis de Datos', 
-    description: 'Soluciones de análisis de datos a gran escala',
+    description: 'Dashboard con analítica predictiva para compras y comportamiento de clientes en centros comerciales.',
     icon: '📊',
     gradient: 'linear-gradient(45deg, #ff007f, #7f00ff)'
   },
   { 
-    id: 12, 
-    name: 'Realidad Aumentada y Virtual', 
-    description: 'Soluciones de AR/VR para experiencias inmersivas',
+    id: 7, 
+    name: 'Sistema de Realidad Aumentada y Virtual para Centro Comercial', 
+    description: 'AR/VR para guiar clientes, mostrar productos y generar interacción personalizada en tiendas.',
     icon: '🕶️',
     gradient: 'linear-gradient(45deg, #ff00ff, #00ffff)'
   },
   { 
-    id: 13, 
-    name: 'Desarrollo de Chatbots Telegram', 
-    description: 'Chatbots inteligentes con procesamiento de lenguaje natural',
+    id: 8, 
+    name: 'ChatBot IA para E-commerce en Telegram', 
+    description: 'Bot inteligente con visión por IA, catálogo interactivo y sistema automatizado de compra y venta.',
     icon: '🤖',
     gradient: 'linear-gradient(45deg, #ff7f00, #00ff7f)'
   },
   { 
-    id: 14, 
+    id: 9, 
     name: 'Blockchain y Criptomonedas', 
-    description: 'Soluciones de blockchain y contratos inteligentes',
+    description: 'Smart contract en Solidity para automatizar pagos y trazabilidad en venta de tokens personalizados.',
     icon: '🔗',
     gradient: 'linear-gradient(45deg, #00ffff, #ff00ff)'
   },
   { 
-    id: 15, 
+    id: 10, 
     name: 'Desarrollo de Software para Veterinaria', 
-    description: 'Soluciones personalizadas para necesidades específicas',
+    description: 'Sistema web para clínica veterinaria con fichas médicas, recetas, facturación y acceso remoto seguro.',
     icon: '🛠️',
     gradient: 'linear-gradient(45deg, #ff0000, #00ff00)'
   },
   { 
-    id: 18, 
-    name: 'Desarrollo de Software para Empresas - ERP', 
-    description: 'Soluciones personalizadas para empresas',
+    id: 11, 
+    name: 'Desarrollo de Software para Empresa Textil - ERP', 
+    description: 'Desarrollado ERP para empresa textil: finanzas, inventario, RRHH, ventas y reportes en tiempo real.',
     icon: '🏢',
     gradient: 'linear-gradient(45deg, #00ff7f, #7f00ff)'
   },
   { 
-    id: 19, 
-    name: 'Desarrollo de Software para el Sector Público', 
+    id: 12, 
+    name: 'Aplicaciónpara el Sector Público', 
     description: 'Soluciones personalizadas para el sector público',
     icon: '🏛️',
     gradient: 'linear-gradient(45deg, #ff00ff, #00ffff)'
   },
   { 
-    id: 20, 
-    name: 'Desarrollo de Software para la Educación', 
-    description: 'Soluciones personalizadas para el sector educativo',
+    id: 13, 
+    name: 'Educación - Control de Vacunas', 
+    description: 'App para instituciones que registra vacunas por estudiante, fecha, dosis y genera certificados digitales.',
     icon: '🎓',
     gradient: 'linear-gradient(45deg, #ff7f00, #00ff7f)'
   },
   { 
-    id: 21, 
+    id: 14, 
     name: 'Desarrollo de Software para la Salud', 
     description: 'Soluciones personalizadas para el sector salud',
     icon: '🏥',
     gradient: 'linear-gradient(45deg, #00ffff, #ff00ff)'
   },
   { 
-    id: 22, 
-    name: 'Desarrollo de Software para el Entretenimiento', 
-    description: 'Soluciones personalizadas para el sector del entretenimiento',
+    id: 15, 
+    name: 'Aplicativo para el Entretenimiento - Comedia', 
+    description: 'Se creó plataforma para comediantes que gestiona eventos, venta de entradas y feedback del público.',
     icon: '🎭',
     gradient: 'linear-gradient(45deg, #ff0000, #00ff00)'
   },
   { 
-    id: 23, 
-    name: 'Desarrollo de Software para el Turismo', 
-    description: 'Soluciones personalizadas para el sector turístico',
+    id: 16, 
+    name: 'Sistema Turístico con Geolocalización', 
+    description: 'Plataforma para operadores turísticos con rutas, reservas, mapas interactivos y recomendaciones personalizadas.',
     icon: '✈️',
     gradient: 'linear-gradient(45deg, #ff7f00, #007fff)'
   },
   { 
-    id: 24, 
-    name: 'Desarrollo de Software para Empresa Industrial', 
-    description: 'Soluciones personalizadas para la industria',
+    id: 17, 
+    name: 'Software para Constructora de Arquitectura', 
+    description: 'ERP modular para firma de arquitectura: cotizaciones, gestión de planos, cronogramas y entregables.',
     icon: '🏭',
     gradient: 'linear-gradient(45deg, #ff007f, #7f00ff)'
   },
   { 
-    id: 25, 
+    id: 18, 
     name: 'Desarrollo de Software para Supermercado', 
     description: 'Soluciones personalizadas para el comercio',
     icon: '🛒',
     gradient: 'linear-gradient(45deg, #00ff7f, #7f00ff)'
   },
   { 
-    id: 26, 
-    name: 'Desarrollo de Software para la Agricultura', 
-    description: 'Soluciones personalizadas para la agricultura',
+    id: 19, 
+    name: 'Software para Agricultura', 
+    description: 'Sistema de riego automatizado con sensores de humedad y temperatura, control remoto y análisis de datos on cloud.',
     icon: '🌾',
     gradient: 'linear-gradient(45deg, #ff00ff, #00ffff)'
   },
   { 
-    id: 27, 
-    name: 'Desarrollo de Software para la Construcción', 
-    description: 'Soluciones personalizadas para la construcción',
+    id: 20, 
+    name: 'Sistema IoT Camaronera', 
+    description: 'Sistema de sensores que dosifican alimento automáticamente según temperatura, horario y fase de crecimiento.',
     icon: '🏗️',
     gradient: 'linear-gradient(45deg, #ff7f00, #00ff7f)'
   },
   { 
-    id: 28, 
-    name: 'Desarrollo de Software para el Transporte', 
-    description: 'Soluciones personalizadas para el transporte',
+    id: 21, 
+    name: 'Plataforma Logística para Transporte', 
+    description: 'Sistema web para gestión de flotas, rastreo GPS, entregas y reportes en tiempo real.',
     icon: '🚚',
     gradient: 'linear-gradient(45deg, #00ffff, #ff00ff)'
   },
   { 
-    id: 29, 
-    name: 'Desarrollo de Software para la Energía', 
-    description: 'Soluciones personalizadas para el sector energético',
+    id: 22, 
+    name: 'Software de Monitoreo Energético Inteligente', 
+    description: 'Aplicación con sensores y visualización de consumo eléctrico en tiempo real con alertas automatizadas.',
     icon: '⚡',
     gradient: 'linear-gradient(45deg, #ff0000, #00ff00)'
   },
   { 
-    id: 31, 
-    name: 'Desarrollo de Software para la Defensa', 
-    description: 'Soluciones personalizadas para la defensa',
-    icon: '🛡️',
-    gradient: 'linear-gradient(45deg, #ff007f, #7f00ff)'
-  },
-  { 
-    id: 32, 
-    name: 'Desarrollo de Software para el Medio Ambiente', 
-    description: 'Soluciones personalizadas para el medio ambiente',
+    id: 23, 
+    name: 'Sistema Ambiental con IoT y Reportes', 
+    description: 'Monitoreo ambiental con sensores de aire, agua y reportes automáticos para control y alertas.',
     icon: '🌍',
     gradient: 'linear-gradient(45deg, #00ff7f, #7f00ff)'
   },
-  { 
-    id: 34, 
-    name: 'Desarrollo de Software para la Ciencia', 
-    description: 'Soluciones personalizadas para la ciencia',
-    icon: '🔭',
-    gradient: 'linear-gradient(45deg, #ff7f00, #00ff7f)'
-  }
 ];
 
 const projects = [

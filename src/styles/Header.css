@@ -76,6 +76,8 @@
   padding: 0.5rem 0;
   margin: 0 1rem;
   transition: all 0.3s ease;
+  box-shadow: none; /* Ensure no shadow is applied */
+  border: none; /* Remove any border */
 }
 
 .nav-links a::after {
@@ -98,19 +100,23 @@
   color: var(--white);
 }
 
+/* Versión Desktop */
 .cta-button {
-  border-color: var(--white);
-  color: var(--white);
-  padding: 0.6rem 1.8rem;
+  border: 2px solid var(--white); /* Mantener borde pero sin padding extra */
+  padding: 0.5rem 1rem; /* Igualar padding a otros elementos */
   margin-left: 1rem;
-  border-radius: 30px;
+  border-radius: 20px;
+  font-size: 1rem; /* Mismo tamaño de fuente */
+  background: transparent;
   transition: all 0.3s ease;
+  line-height: 1; /* Asegurar misma altura de línea */
 }
 
 .cta-button:hover {
   background: var(--dark-purple);
   border-color: var(--dark-purple);
   color: var(--white);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera y consistente */
 }
 
 .hamburger {
@@ -181,15 +187,18 @@
 
   .nav-links a {
     margin: 0;
-    padding: 1rem;
+    padding: 0.8rem 1.5rem; /* Unificar padding móvil */
     text-align: center;
     border-radius: 8px;
     background: rgba(255,255,255,0.05);
   }
 
   .cta-button {
-    margin: 1rem 0 0;
-    width: 100%;
+    width: auto; /* Quitar ancho completo */
+    margin: 0.5rem 0; /* Margen consistente */
+    padding: 0.8rem 1.5rem; /* Igualar padding móvil */
+    display: inline-flex; /* Alinear texto correctamente */
+    justify-content: center;
   }
 }
 

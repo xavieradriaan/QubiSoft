@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-section">
-          <h4 className="section-title">Contacto</h4>
+          <h4 id="contact" className="section-title">Contacto</h4>
           <div className="contact-container">
             <a href="mailto:contact@qubitsoft.net" className="email-link">
               <svg className="icon" viewBox="0 0 24 24">

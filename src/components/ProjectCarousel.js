@@ -4,22 +4,22 @@ import '../styles/ProjectCarousel.css';
 const brands = [
   {
     id: 1,
-    name: 'KFC Ecuador',
-    description: 'Franquicia internacional con fuerte presencia local',
-    industry: 'Restauración',
+    name: 'COMPANIA AGRICOLA SAN MIGUEL SA CASM',
+    description: 'Co internacional con fuerte presencia local',
+    industry: 'Agricultura',
     logo: 'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'
   },
   {
     id: 2,
-    name: 'Netlife',
-    description: 'Proveedor ecuatoriano de internet por fibra óptica',
-    industry: 'Telecomunicaciones',
+    name: 'C.A. ECUATORIANA DE CERAMICA',
+    description: 'Líder en la producción de cerámica en Ecuador',
+    industry: 'Cerámica',
     logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm3 11h-2v4h-2v-4H9v-2h2V9h2v2h2v2z'
   },
   {
     id: 3,
-    name: 'Universidad San Francisco de Quito',
-    description: 'Institución de educación superior privada reconocida',
+    name: 'COLEGIO FRANCES DE QUITO C LTDA',
+    description: 'Institución de educación privada reconocida',
     industry: 'Educación',
     logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
   },
@@ -33,7 +33,7 @@ const brands = [
   {
     id: 5,
     name: 'Agroscan',
-    description: 'Startup ecuatoriana de tecnología agrícola con drones',
+    description: 'Compañía Ecuatoriana de tecnología agrícola con drones',
     industry: 'Agrotecnología',
     logo: 'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'
   },
@@ -74,9 +74,9 @@ const brands = [
   },
   {
     id: 11,
-    name: 'Cerveza Pilsener',
-    description: 'Cerveza ecuatoriana con tradición y calidad',
-    industry: 'Bebidas',
+    name: 'PINTURAS CONDOR SA Pilsener',
+    description: 'Fabrica de pinturas y recubrimientos con enfoque en sostenibilidad',
+    industry: 'Pinturas y recubrimientos',
     logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
   }
 ];
