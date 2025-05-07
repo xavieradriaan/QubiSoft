@@ -200,9 +200,9 @@ const ProjectCarousel = () => {
                     loading="lazy"
                   />
                 </div>
-                <span className="industry-tag">{brand.industry}</span>
                 <h3 className="carousel-item-title">{brand.name}</h3>
                 <p className="carousel-item-description">{brand.description}</p>
+                <span className="industry-tag">{brand.industry}</span>
                 <button className="demo-button">
                   Ver caso de éxito
                   <span className="hover-effect" aria-hidden="true"></span>
