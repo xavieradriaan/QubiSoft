@@ -127,6 +127,7 @@
   flex-wrap: wrap;
   gap: 0.8rem;
   margin-bottom: 2rem;
+  justify-items: start; /* Forzar alineación izquierda en grid */
 }
 
 .tech-pill {
@@ -139,6 +140,8 @@
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
+  text-align: left; /* Alinear texto a la izquierda */
+  justify-content: flex-start; /* Alinear contenido flex a la izquierda */
 }
 
 .tech-glow {
