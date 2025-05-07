@@ -184,6 +184,30 @@ const projects = [
     tech: "Monitoreo remoto, Alertas en tiempo real, Análisis predictivo, Integración con dispositivos médicos",
     image: process.env.PUBLIC_URL + "/sistemaMed.png",  // Ruta actualizada
     pattern: "neural-pattern.svg"
+  },
+  {
+    id: 3,
+    title: "Aplicación de Contabilidad Financiera Personal",
+    description: "Gestión de ingresos y egresos con control financiero personalizado",
+    tech: "Análisis financiero, Reportes automatizados, Gestión de presupuestos",
+    image: process.env.PUBLIC_URL + "/contabilidad.png",  // Ruta actualizada
+    pattern: "finance-pattern.svg"
+  },
+  {
+    id: 4,
+    title: "ChatBot IA para E-commerce en Telegram",
+    description: "Bot inteligente con visión por IA, catálogo interactivo y sistema automatizado de compra y venta.",
+    tech: "Inteligencia Artificial, Automatización de procesos, Integración con plataformas de mensajería",
+    image: process.env.PUBLIC_URL + "/chatbot.png",  // Ruta actualizada
+    pattern: "chat-pattern.svg"
+  },
+  {
+    id: 5,
+    title: "Software para Constructora de Arquitectura",
+    description: "ERP modular para firma de arquitectura: cotizaciones, gestión de planos, cronogramas y entregables.",
+    tech: "ERP, Gestión de proyectos, Automatización de procesos",
+    image: process.env.PUBLIC_URL + "/constructora.png",  // Ruta actualizada
+    pattern: "architecture-pattern.svg"
   }
 ];
 
