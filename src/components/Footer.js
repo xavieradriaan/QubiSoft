@@ -46,7 +46,7 @@ const Footer = () => {
             </a>
             
             <div className="social-links">
-              <a href="https://linkedin.com" className="social-link">
+              <a href="https://www.linkedin.com/in/adrián-andrade-44963a141/" className="social-link">
                 <svg className="icon" viewBox="0 0 24 24">
                   <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-.5 15.5v-5.3a3.3 3.3 0 0 0-3.3-3.3 3.2 3.2 0 0 0-2.8 1.6h-.1v-1.4H9.8v8.4h2.9v-4.7a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4.7H18.5zM7.2 6.7a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2zM6.5 18.5v-8.4h1.4v8.4H6.5z"/>
                 </svg>

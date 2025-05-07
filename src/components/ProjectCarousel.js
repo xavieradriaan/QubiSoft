@@ -7,84 +7,84 @@ const brands = [
     name: 'COMPANIA AGRICOLA SAN MIGUEL SA CASM',
     description: 'Co internacional con fuerte presencia local',
     industry: 'Agricultura',
-    logo: 'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'
+    logo: 'sanmiguel.png' // Nombre actualizado
   },
   {
     id: 2,
     name: 'C.A. ECUATORIANA DE CERAMICA',
     description: 'Líder en la producción de cerámica en Ecuador',
     industry: 'Cerámica',
-    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm3 11h-2v4h-2v-4H9v-2h2V9h2v2h2v2z'
+    logo: 'ecuacermica.png'
   },
   {
     id: 3,
     name: 'COLEGIO FRANCES DE QUITO C LTDA',
     description: 'Institución de educación privada reconocida',
     industry: 'Educación',
-    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+    logo: 'frances.png'
   },
   {
     id: 4,
     name: 'Aglomerados Cotopaxi',
     description: 'Líder nacional en producción de tableros de madera',
     industry: 'Industria maderera',
-    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+    logo: 'aglomerados.png'
   },
   {
     id: 5,
     name: 'Agroscan',
     description: 'Compañía Ecuatoriana de tecnología agrícola con drones',
     industry: 'Agrotecnología',
-    logo: 'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'
+    logo: 'agroscan.png'
   },
   {
     id: 6,
     name: 'GreenPack',
     description: 'PYME que fabrica empaques biodegradables en Guayaquil',
     industry: 'Manufactura sustentable',
-    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm1-11h-2v4h2v2h-2v2h2v-4h-2v-2h4V9h-4z'
+    logo: 'greenpack.png'
   },
   {
     id: 7,
     name: 'RedLogic',
     description: 'Servicios de infraestructura y redes para empresas emergentes',
     industry: 'Infraestructura IT',
-    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+    logo: 'redlogic.png'
   },
   {
     id: 8,
     name: 'Café Flor de Caña',
     description: 'Café premium ecuatoriano con reconocimiento internacional',
     industry: 'Alimentos y bebidas',
-    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+    logo: 'cafe.png'
   },
   {
     id: 9,
     name: 'Construcciones Ecuador',
     description: 'Líder en construcción de infraestructura pública y privada',
     industry: 'Construcción',
-    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+    logo: 'construcciones.png'
   },
   {
     id: 10,
     name: 'Ecuador Travel',
     description: 'Agencia de turismo con enfoque en sostenibilidad',
     industry: 'Turismo',
-    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+    logo: 'travel.png'
   },
   {
     id: 11,
     name: 'PINTURAS CONDOR SA Pilsener',
     description: 'Fabrica de pinturas y recubrimientos con enfoque en sostenibilidad',
     industry: 'Pinturas y recubrimientos',
-    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+    logo: 'condor.png'
   },
   {
     id: 12,
     name: 'CONTINENTAL TIRE ANDINA S. A.',
     description: 'Fabricante de neumáticos y productos de caucho', 
     industry: 'Neumáticos y caucho',
-    logo: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-11h2v2h-2V9zm0 4h2v6h-2v-6z'
+    logo: 'continental.png'
   }
 ];
 
@@ -194,9 +194,11 @@ const ProjectCarousel = () => {
             >
               <div className="brand-card">
                 <div className="brand-logo">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d={brand.logo}></path>
-                  </svg>
+                  <img 
+                    src={process.env.PUBLIC_URL + `/${brand.logo}`}
+                    alt={`Logo ${brand.name}`}
+                    loading="lazy"
+                  />
                 </div>
                 <span className="industry-tag">{brand.industry}</span>
                 <h3 className="carousel-item-title">{brand.name}</h3>
